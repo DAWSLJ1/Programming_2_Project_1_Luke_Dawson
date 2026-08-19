@@ -46,7 +46,7 @@ namespace Project1
             }
 
             public string Name { get => name; }
-            public int iD { get => ID; }
+            public int Id { get => ID; }
             public int Scores { get => scores; }
 
             // A CSV line representing this contact, matching the format it was read from

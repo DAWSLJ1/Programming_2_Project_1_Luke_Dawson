@@ -7,6 +7,9 @@
     <Compile Update="CourseAssessmentMark.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DataHandler.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Department.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -14,6 +17,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Institution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Learner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Lecturer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Seeder.cs">
