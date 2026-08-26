@@ -12,52 +12,117 @@ namespace Project1
 {
     public partial class CourseAssessmentMark : Form
     {
-        public CourseAssessmentMark()
-        {
-            InitializeComponent();
-        }
-        public enum EPosition
-        {
-            Lecturer = 0,
-            Senior_Lecturer = 1,
-            Principal_Lecturer = 2,
-            Associate_Professor = 3,
-            Professor = 4
-        }
-        public enum ESalary
-        {
-            Lecturer_Salary = 85000,
-            Senior_Lecturer_Salary = 100000,
-            Principal_Lecturer_Salary = 115000,
-            Associate_Professor_Salary = 130000,
-            Professor_Salary = 145000
-        }
-        public class Learners
-        {
-            private int ID;
-            private string name;
-            private int scores;
+        public Course Course { get; set; }
 
-            public Learners(int ID, string name, int scores)
+        public List<int> AssessmentMarks { get; set; }
+
+        public CourseAssessmentMark(Course course, List<int> assessmentMarks)
+        {
+            this.Course = course;
+            this.AssessmentMarks = assessmentMarks;
+        }
+
+        // Returns every assessment mark.
+        public List<int> GetAllMarks()
+        {
+            return AssessmentMarks;
+        }
+
+        // Returns a grade for every assessment mark.
+        public List<string> GetAllGrades()
+        {
+            List<string> grades = new List<string>();
+
+            foreach (int mark in AssessmentMarks)
             {
-                this.ID = ID;
-                this.name = name;
-                this.scores = scores;
+                grades.Add(GetGrade(mark));
             }
 
-            public string Name { get => name; }
-            public int Id { get => ID; }
-            public int Scores { get => scores; }
-
-            // A CSV line representing this contact, matching the format it was read from
-            public string ToCsvLine() => $"{ID},{name},{scores}";
+            return grades;
         }
-        public static List<Learners> LoadContacts(string filePath)
-        {
-            List<Learners> contacts = new List<Learners>();
-            string[] lines = File.ReadAllLines(filePath);
 
-            return contacts;
+        public int GetHighestMark()
+        {
+            return AssessmentMarks.Max();
+        }
+
+        public int GetLowestMark()
+        {
+            return AssessmentMarks.Min();
+        }
+
+        // Returns all marks if below 50.
+        public List<int> GetFailMarks()
+        {
+            List<int> failMarks = new List<int>();
+
+            foreach (int mark in AssessmentMarks)
+            {
+                if (mark < 50)
+                {
+                    failMarks.Add(mark);
+                }
+            }
+
+            return failMarks;
+        }
+
+        public double GetAverageMark()
+        {
+            return AssessmentMarks.Average();
+        }
+
+        // Finds the grade based on the average mark.
+        public string GetAverageGrade()
+        {
+            double average = GetAverageMark();
+
+            return GetGrade((int)Math.Round(average));
+        }
+
+        // Update these ranges to match the assignment's grade table.
+        private string GetGrade(int mark)
+        {
+            if (mark >= 90)
+            {
+                return "A+";
+            }
+            else if (mark >= 85)
+            {
+                return "A";
+            }
+            else if (mark >= 80)
+            {
+                return "A-";
+            }
+            else if (mark >= 75)
+            {
+                return "B+";
+            }
+            else if (mark >= 70)
+            {
+                return "B";
+            }
+            else if (mark >= 65)
+            {
+                return "B-";
+            }
+            else if (mark >= 60)
+            {
+                return "C+";
+            }
+            else if (mark >= 55)
+            {
+                return "C";
+            }
+            else if (mark >= 50)
+            {
+                return "C-";
+            }
+            else
+            {
+                return "Fail";
+            }
         }
     }
 }
