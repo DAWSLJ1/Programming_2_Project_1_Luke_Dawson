@@ -1,22 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Project1
 {
-    public partial class CourseAssessmentMark : Form
+    internal class CourseAssessmentMarks
     {
         public Course Course { get; set; }
 
         public List<int> AssessmentMarks { get; set; }
 
-        public CourseAssessmentMark(Course course, List<int> assessmentMarks)
+        public CourseAssessmentMarks(Course course, List<int> assessmentMarks)
         {
             this.Course = course;
             this.AssessmentMarks = assessmentMarks;

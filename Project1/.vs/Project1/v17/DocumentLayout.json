@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\courseassessmentmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\courseassessmentmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\project1\\courseassessmentmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\courseassessmentmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\project1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\project1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\project1\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\courseassessmentmarks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\courseassessmentmarks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\project1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -31,28 +15,44 @@
       "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\datahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\learners.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\learners.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\learner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\learner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\learner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\learner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\project1\\institution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\institution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\project1\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\seeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\lecturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\project1\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\institution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\institution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\project1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\project1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project1\\project1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A62EEE0C-D86B-4095-B265-47B61D42D386}|Project1\\Project1.csproj|solutionrelative:project1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,48 +62,133 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "learners.txt",
+              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\learners.txt",
+              "RelativeDocumentMoniker": "Project1\\learners.txt",
+              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\learners.txt",
+              "RelativeToolTip": "Project1\\learners.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-09-02T01:45:32.056Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Program.cs",
+              "RelativeDocumentMoniker": "Project1\\Program.cs",
+              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Program.cs",
+              "RelativeToolTip": "Project1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T01:51:28.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Lecturer.cs",
+              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Lecturer.cs",
+              "RelativeDocumentMoniker": "Project1\\Lecturer.cs",
+              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Lecturer.cs",
+              "RelativeToolTip": "Project1\\Lecturer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T01:51:18.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Learner.cs",
+              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Learner.cs",
+              "RelativeDocumentMoniker": "Project1\\Learner.cs",
+              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Learner.cs",
+              "RelativeToolTip": "Project1\\Learner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T01:50:54.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Institution.cs",
+              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Institution.cs",
+              "RelativeDocumentMoniker": "Project1\\Institution.cs",
+              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Institution.cs",
+              "RelativeToolTip": "Project1\\Institution.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T01:50:27.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Seeder.cs",
+              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Seeder.cs",
+              "RelativeDocumentMoniker": "Project1\\Seeder.cs",
+              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Seeder.cs",
+              "RelativeToolTip": "Project1\\Seeder.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T01:49:51.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CourseAssessmentMarks.cs",
+              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\CourseAssessmentMarks.cs",
+              "RelativeDocumentMoniker": "Project1\\CourseAssessmentMarks.cs",
+              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\CourseAssessmentMarks.cs",
+              "RelativeToolTip": "Project1\\CourseAssessmentMarks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T01:48:37.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Departments.cs",
+              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Departments.cs",
+              "RelativeDocumentMoniker": "Project1\\Departments.cs",
+              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Departments.cs",
+              "RelativeToolTip": "Project1\\Departments.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T01:48:09.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DataHandler.cs",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\DataHandler.cs",
               "RelativeDocumentMoniker": "Project1\\DataHandler.cs",
               "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\DataHandler.cs",
               "RelativeToolTip": "Project1\\DataHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T23:28:36.185Z",
+              "WhenOpened": "2026-09-02T01:47:43.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DataHandler.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\DataHandler.cs",
-              "RelativeDocumentMoniker": "Project1\\DataHandler.cs",
-              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\DataHandler.cs [Design]",
-              "RelativeToolTip": "Project1\\DataHandler.cs [Design]",
+              "DocumentIndex": 10,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Course.cs",
+              "RelativeDocumentMoniker": "Project1\\Course.cs",
+              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Course.cs",
+              "RelativeToolTip": "Project1\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T23:09:54.078Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-09-02T01:47:07.354Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Lecturer.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Lecturer.cs",
-              "RelativeDocumentMoniker": "Project1\\Lecturer.cs",
-              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Lecturer.cs [Design]",
-              "RelativeToolTip": "Project1\\Lecturer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T23:09:21.304Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Project1.csproj",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Project1.csproj",
               "RelativeDocumentMoniker": "Project1\\Project1.csproj",
@@ -111,36 +196,11 @@
               "RelativeToolTip": "Project1\\Project1.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-08-19T22:44:24.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-19T22:44:24.748Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CourseAssessmentMark.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\CourseAssessmentMark.cs",
-              "RelativeDocumentMoniker": "Project1\\CourseAssessmentMark.cs",
-              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\CourseAssessmentMark.cs [Design]",
-              "RelativeToolTip": "Project1\\CourseAssessmentMark.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T22:43:46.2Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Course.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Course.cs",
-              "RelativeDocumentMoniker": "Project1\\Course.cs",
-              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Course.cs [Design]",
-              "RelativeToolTip": "Project1\\Course.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T22:37:29.496Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Form1.cs",
               "RelativeDocumentMoniker": "Project1\\Form1.cs",
@@ -152,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Form1.cs",
               "RelativeDocumentMoniker": "Project1\\Form1.cs",
@@ -160,66 +220,7 @@
               "RelativeToolTip": "Project1\\Form1.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAA1wBcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T22:17:01.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CourseAssessmentMark.cs",
-              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\CourseAssessmentMark.cs",
-              "RelativeDocumentMoniker": "Project1\\CourseAssessmentMark.cs",
-              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\CourseAssessmentMark.cs",
-              "RelativeToolTip": "Project1\\CourseAssessmentMark.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAawC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T22:44:14.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Learner.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Learner.cs",
-              "RelativeDocumentMoniker": "Project1\\Learner.cs",
-              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Learner.cs [Design]",
-              "RelativeToolTip": "Project1\\Learner.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T23:08:59.855Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Seeder.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Seeder.cs",
-              "RelativeDocumentMoniker": "Project1\\Seeder.cs",
-              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Seeder.cs [Design]",
-              "RelativeToolTip": "Project1\\Seeder.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T22:37:53.865Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Institution.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Institution.cs",
-              "RelativeDocumentMoniker": "Project1\\Institution.cs",
-              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Institution.cs [Design]",
-              "RelativeToolTip": "Project1\\Institution.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T22:38:50.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Department.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Department.cs",
-              "RelativeDocumentMoniker": "Project1\\Department.cs",
-              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project1\\Project1\\Department.cs [Design]",
-              "RelativeToolTip": "Project1\\Department.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T22:36:35.339Z"
+              "WhenOpened": "2026-08-19T22:17:01.69Z"
             }
           ]
         }
