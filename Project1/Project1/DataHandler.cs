@@ -8,5 +8,10 @@ namespace Project1
 {
     public class DataHandler
     {
+        public DataHandler() 
+        {
+         
+        }
+
     }
 }

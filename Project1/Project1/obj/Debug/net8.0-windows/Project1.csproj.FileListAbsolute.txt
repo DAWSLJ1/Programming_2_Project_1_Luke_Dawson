@@ -1,9 +1,4 @@
-C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.Course.resources
-C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.CourseAssessmentMark.resources
-C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.Department.resources
 C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.Form1.resources
-C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.Institution.resources
-C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.Seeder.resources
 C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.csproj.GenerateResource.cache
 C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.AssemblyInfoInputs.cache
