@@ -6,32 +6,40 @@ using System.Threading.Tasks;
 
 namespace Project1
 {
-    public class Lecturer
+    public enum EPosition
     {
-        public Lecturer()
+        Lecturer = 0,
+        Senior_Lecturer = 1,
+        Principal_Lecturer = 2,
+        Associate_Professor = 3,
+        Professor = 4
+    }
+    public enum ESalary
+    {
+        Lecturer_Salary = 85000,
+        Senior_Lecturer_Salary = 100000,
+        Principal_Lecturer_Salary = 115000,
+        Associate_Professor_Salary = 130000,
+        Professor_Salary = 145000
+    }
+    public class Lecturer : Person
+    {
+        private Course Course;
+        private EPosition Position;
+        private ESalary Salary;
+
+        public Lecturer(Course course, int iD, string firstName, string lastName, ESalary salary, EPosition position) : base(iD, firstName, lastName)
         {
-            int Id;
-            string FirstName;
-            string LastName;
-            EPosition Position;
-            ESalary Salary;
-            Course course;
+            this.Course = course;
+            this.Position = position;
+            this.Salary = salary;
         }
-        public enum EPosition
+
+        public override string DisplayDetail()
         {
-            Lecturer = 0,
-            Senior_Lecturer = 1,
-            Principal_Lecturer = 2,
-            Associate_Professor = 3,
-            Professor = 4
+            return base.DisplayDetail() + $"{Course}" + $"{Salary}" + $"{Position}";
         }
-        public enum ESalary
-        {
-            Lecturer_Salary = 85000,
-            Senior_Lecturer_Salary = 100000,
-            Principal_Lecturer_Salary = 115000,
-            Associate_Professor_Salary = 130000,
-            Professor_Salary = 145000
-        }
+
+
     }
 }

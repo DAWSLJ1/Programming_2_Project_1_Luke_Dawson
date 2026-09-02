@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace Project1
 {
-    public class Learner
+    public class Learner : Person
     {
-        public Learner()
+            
+        private CourseAssessmentMarks courseAssessmentMarks;
+
+        public Learner(CourseAssessmentMarks Marks, int iD, string firstName, string lastName) : base(iD,firstName,lastName)
         {
-            int Id;
-            string FirstName;
-            string LastName;
-            CourseAssessmentMarks courseAssessmentMarks;
+            this.courseAssessmentMarks = Marks;
         }
+
+        public override string DisplayDetail()
+        {
+            return base.DisplayDetail() + $"{courseAssessmentMarks.Course}";
+        }
+
     }
 }

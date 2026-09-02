@@ -19,6 +19,7 @@ namespace Project1
             button12.Text = "12. Remove a Lecturer";
             button13.Text = "\tCalculations";
             button14.Text = "\tExit";
+            label1.Text = "Course Assessment Manager";
 
         }
 
@@ -94,6 +95,11 @@ namespace Project1
         }
 
         private void button13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
