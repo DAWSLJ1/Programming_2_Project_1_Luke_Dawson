@@ -6,6 +6,7 @@ namespace Project1
         public Form1()
         {
             InitializeComponent();
+            //Manually changes text for each button
             button1.Text = "1. Display Course Details";
             button2.Text = "2. Display All Marks";
             button3.Text = "3. Display All Grades";
@@ -21,6 +22,7 @@ namespace Project1
             button13.Text = "\tCalculations";
             button14.Text = "\tExit";
             label1.Text = "Course Assessment Manager";
+            //Calls each list of the Seeder class
             Seeder.SeedInstitutions();
             Seeder.SeedDepartments();
             Seeder.SeedCourses();
@@ -30,11 +32,13 @@ namespace Project1
 
         private void button14_Click(object sender, EventArgs e)
         {
+        //Closes application
             Environment.Exit(0);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+        //Pulls Course data from Seeder Class
             dataGridView1.DataSource = Seeder.Courses;
         }
 
