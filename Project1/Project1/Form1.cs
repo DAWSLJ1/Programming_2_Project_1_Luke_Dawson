@@ -27,7 +27,14 @@ namespace Project1
             Seeder.SeedDepartments();
             Seeder.SeedCourses();
             DataHandler.ReadFromLearnFile("learners.txt", Learners, Seeder.Courses);
+        }
 
+        private void RefreshDataGrid(int columnCount)
+        {
+            dataGridView1.Rows.Clear();
+            dataGridView1.Refresh();
+            dataGridView1.ColumnCount = columnCount;
+        }
         private void button14_Click(object sender, EventArgs e)
         {
         //Closes application
@@ -36,12 +43,28 @@ namespace Project1
 
         private void button1_Click(object sender, EventArgs e)
         {
-        dataGridView1.DataSource = Seeder.Courses;
+            RefreshDataGrid(9);
+            dataGridView1.Columns[0].HeaderText = "Code";
+            dataGridView1.Columns[1].HeaderText = "Name";
+            dataGridView1.Columns[2].HeaderText = "Description";
+            dataGridView1.Columns[3].HeaderText = "Credits";
+            dataGridView1.Columns[4].HeaderText = "Fees";
+            dataGridView1.Columns[5].HeaderText = "Institution";
+            dataGridView1.Columns[6].HeaderText = "Region";
+            dataGridView1.Columns[7].HeaderText = "Country";
+            dataGridView1.Columns[8].HeaderText = "Department";
+            foreach (Course course in Seeder.Courses)
+            {
+                //Make an array of strings containing the display data
+                string[] tempRow = { $"{course.Code}", $"{course.Name}", $"{course.Description}", $"{course.Credits}", $"${course.Fees}", $"{course.Department.Institution.Name}", $"{course.Department.Institution.Region}", $"{course.Department.Institution.Country}", $"{course.Department.Name}" };
+                //Then add the array to the grid as a row
+                dataGridView1.Rows.Add(tempRow);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = DataHandler.ReadFromLearnFile("learners.txt", "lecturers.txt");
+ 
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -8,7 +8,7 @@ namespace Project1
 {
     public class Department
     {
-        private Institution Institution { get; set; }
+        public Institution Institution { get; set; }
         public string Name { get => name; set => name = value; }
 
         private string name;
