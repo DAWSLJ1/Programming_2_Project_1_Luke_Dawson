@@ -12,6 +12,10 @@ namespace Project1
         private static List<Department> departments = new List<Department>();
         private static List<Course> courses = new List<Course>();
 
+        public static List<Institution> Institutions { get => institutions; set => institutions = value; }
+        public static List<Department> Departments { get => departments; set => departments = value; }
+        public static List<Course> Courses { get => courses; set => courses = value; }
+
         public static List<Institution> SeedInstitutions()
         {
             institutions.Add(new Institution("Otago Polytechnic", "Otago", "New Zealand"));

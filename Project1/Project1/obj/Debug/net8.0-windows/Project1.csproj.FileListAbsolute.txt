@@ -15,3 +15,5 @@ C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\o
 C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.pdb
 C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\Project1.genruntimeconfig.cache
 C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\obj\Debug\net8.0-windows\ref\Project1.dll
+C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\bin\Debug\net8.0-windows\learners.txt
+C:\Users\DAWSLJ1\Desktop\Programming_2_Project_1_Luke_Dawson\Project1\Project1\bin\Debug\net8.0-windows\lecturers.txt
