@@ -21,20 +21,20 @@ namespace Project1
                 int courseNum = int.Parse(learnerDetails[3]);
 
                 List<int> marks = new List<int>()
-        {
-            Convert.ToInt32(learnerDetails[4]),
-            Convert.ToInt32(learnerDetails[5]),
-            Convert.ToInt32(learnerDetails[6]),
-            Convert.ToInt32(learnerDetails[7]),
-            Convert.ToInt32(learnerDetails[8])
-        };
+                {
+                    Convert.ToInt32(learnerDetails[4]),
+                    Convert.ToInt32(learnerDetails[5]),
+                    Convert.ToInt32(learnerDetails[6]),
+                    Convert.ToInt32(learnerDetails[7]),
+                    Convert.ToInt32(learnerDetails[8])
+                };
 
                 CourseAssessmentMarks Marks = new CourseAssessmentMarks(courses[courseNum], marks);
                 Learner learner = new Learner(Marks, id, firstName, lastName);
                 learners.Add(learner);
             }
         }
-        public static void ReadFromLecFile(string filePath, List<Lecturer> lecturer, List<Course> courses, List<EPosition> positions, List<ESalary> salaries)
+        public static void ReadFromLecFile(string filePath, List<Lecturer> lecturers, List<Course> courses)
         {
             List<string> lines = File.ReadAllLines(filePath).ToList();
             foreach (string line in lines)
@@ -43,9 +43,12 @@ namespace Project1
                 int id = int.Parse(lecturerDetails[0]);
                 string firstName = lecturerDetails[1];
                 string lastName = lecturerDetails[2];
-                int position = int.Parse(lecturerDetails[3]);
-                int salary = int.Parse(lecturerDetails[4]);
-                string course = lecturerDetails[5];
+                EPosition position = (EPosition)(int.Parse(lecturerDetails[3]));
+                ESalary salary = (ESalary)(int.Parse(lecturerDetails[4]));
+                Course course = courses[int.Parse(lecturerDetails[5])];
+
+                Lecturer lecturer = new Lecturer(course, id, firstName, lastName, salary, position);
+                lecturers.Add(lecturer);
 
             }
 

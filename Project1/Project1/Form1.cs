@@ -20,9 +20,9 @@ namespace Project1
             button13.Text = "\tCalculations";
             button14.Text = "\tExit";
             label1.Text = "Course Assessment Manager";
+          
 
         }
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
