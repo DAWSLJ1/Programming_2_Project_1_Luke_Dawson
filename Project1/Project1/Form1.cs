@@ -26,28 +26,7 @@ namespace Project1
             Seeder.SeedInstitutions();
             Seeder.SeedDepartments();
             Seeder.SeedCourses();
-            
-         // Reads learner and lecturer data from the text files.
-            DataHandler.ReadFromLearnFile(
-                "learners.txt",
-                Learners,
-                Seeder.Courses);
-
-            DataHandler.ReadFromLecturerFile(
-                "lecturers.txt",
-                Lecturers,
-                Seeder.Courses);
-        }
-
-        /// Clears existing grid columns and displays a list in the DataGridView.
-        private void DisplayData<T>(List<T> data)
-        {
-            dataGridView1.DataSource = null;
-            dataGridView1.AutoGenerateColumns = true;
-            dataGridView1.DataSource = data;
-        }
-
-        }
+            DataHandler.ReadFromLearnFile("learners.txt", Learners, Seeder.Courses);
 
         private void button14_Click(object sender, EventArgs e)
         {
@@ -57,27 +36,7 @@ namespace Project1
 
         private void button1_Click(object sender, EventArgs e)
         {
-        //Pulls Course, Department & Institution data from Seeder Class
-             List<CourseDisplay> courseDetails = new List<CourseDisplay>();
-
-            foreach (Course course in Seeder.Courses)
-            {
-                courseDetails.Add(new CourseDisplay
-                {
-                    Code = course.Code,
-                    Name = course.Name,
-                    Description = course.Description,
-                    Credits = course.Credits,
-                    Fees = course.Fees,
-                    Institution = course.Department.Institution.Name,
-                    Region = course.Department.Institution.Region,
-                    Country = course.Department.Institution.Country,
-                    Department = course.Department.Name
-                });
-            }
-
-            DisplayData(courseDetails);
-        }
+        dataGridView1.DataSource = Seeder.Courses;
         }
 
         private void button2_Click(object sender, EventArgs e)
