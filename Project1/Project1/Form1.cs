@@ -38,8 +38,27 @@ namespace Project1
 
         private void button1_Click(object sender, EventArgs e)
         {
-        //Pulls Course data from Seeder Class
-            dataGridView1.DataSource = Seeder.Courses;
+        //Pulls Course, Department & Institution data from Seeder Class
+             List<CourseDisplay> courseDetails = new List<CourseDisplay>();
+
+            foreach (Course course in Seeder.Courses)
+            {
+                courseDetails.Add(new CourseDisplay
+                {
+                    Code = course.Code,
+                    Name = course.Name,
+                    Description = course.Description,
+                    Credits = course.Credits,
+                    Fees = course.Fees,
+                    Institution = course.Department.Institution.Name,
+                    Region = course.Department.Institution.Region,
+                    Country = course.Department.Institution.Country,
+                    Department = course.Department.Name
+                });
+            }
+
+            DisplayData(courseDetails);
+        }
         }
 
         private void button2_Click(object sender, EventArgs e)
