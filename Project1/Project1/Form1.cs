@@ -26,7 +26,26 @@ namespace Project1
             Seeder.SeedInstitutions();
             Seeder.SeedDepartments();
             Seeder.SeedCourses();
-            DataHandler.ReadFromLearnFile("learners.txt", Learners, Seeder.Courses);
+            
+         // Reads learner and lecturer data from the text files.
+            DataHandler.ReadFromLearnFile(
+                "learners.txt",
+                Learners,
+                Seeder.Courses);
+
+            DataHandler.ReadFromLecturerFile(
+                "lecturers.txt",
+                Lecturers,
+                Seeder.Courses);
+        }
+
+        /// Clears existing grid columns and displays a list in the DataGridView.
+        private void DisplayData<T>(List<T> data)
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.DataSource = data;
+        }
 
         }
 
