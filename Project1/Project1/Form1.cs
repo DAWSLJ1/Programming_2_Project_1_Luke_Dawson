@@ -64,7 +64,41 @@ namespace Project1
 
         private void button2_Click(object sender, EventArgs e)
         {
- 
+         RefreshDataGrid(6);
+
+        dataGridView1.Columns[0].HeaderText = "ID";
+        dataGridView1.Columns[1].HeaderText = "First Name";
+        dataGridView1.Columns[2].HeaderText = "Last Name";
+        dataGridView1.Columns[3].HeaderText = "Course Code";
+        dataGridView1.Columns[4].HeaderText = "Course Name";
+        dataGridView1.Columns[5].HeaderText = "Assessment Marks";
+
+        foreach (Learner learner in Learners)
+        {
+            CourseAssessmentMark courseAssessmentMark =
+                learner.CourseAssessmentMark;
+
+            Course course = courseAssessmentMark.Course;
+
+            // Turns the List<int> of marks into one display string,
+            string marks = string.Join(
+             ", ",
+                courseAssessmentMark.GetAllMarks());
+
+            // Make an array of strings containing the display data.
+            string[] tempRow =
+            {
+            $"{learner.Id}",
+            $"{learner.FirstName}",
+            $"{learner.LastName}",
+            $"{course.Code}",
+            $"{course.Name}",
+            $"{marks}"
+            };
+
+            // Add the array to the DataGridView as a row.
+            dataGridView1.Rows.Add(tempRow);
+        }
         }
 
         private void button3_Click(object sender, EventArgs e)
