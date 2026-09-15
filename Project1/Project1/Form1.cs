@@ -37,68 +37,76 @@ namespace Project1
         }
         private void button14_Click(object sender, EventArgs e)
         {
-        //Closes application
+            //Closes application
             Environment.Exit(0);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            RefreshDataGrid(9);
-            dataGridView1.Columns[0].HeaderText = "Code";
-            dataGridView1.Columns[1].HeaderText = "Name";
-            dataGridView1.Columns[2].HeaderText = "Description";
-            dataGridView1.Columns[3].HeaderText = "Credits";
-            dataGridView1.Columns[4].HeaderText = "Fees";
-            dataGridView1.Columns[5].HeaderText = "Institution";
-            dataGridView1.Columns[6].HeaderText = "Region";
-            dataGridView1.Columns[7].HeaderText = "Country";
-            dataGridView1.Columns[8].HeaderText = "Department";
-            foreach (Course course in Seeder.Courses)
-            {
-                //Make an array of strings containing the display data
-                string[] tempRow = { $"{course.Code}", $"{course.Name}", $"{course.Description}", $"{course.Credits}", $"${course.Fees}", $"{course.Department.Institution.Name}", $"{course.Department.Institution.Region}", $"{course.Department.Institution.Country}", $"{course.Department.Name}" };
-                //Then add the array to the grid as a row
-                dataGridView1.Rows.Add(tempRow);
-            }
+            dataGridView1.DataSource = Seeder.Courses;
+            //RefreshDataGrid(9);
+            //dataGridView1.Columns[0].HeaderText = "Code";
+            //dataGridView1.Columns[1].HeaderText = "Name";
+            //dataGridView1.Columns[2].HeaderText = "Description";
+            //dataGridView1.Columns[3].HeaderText = "Credits";
+            //dataGridView1.Columns[4].HeaderText = "Fees";
+            //dataGridView1.Columns[5].HeaderText = "Institution";
+            //dataGridView1.Columns[6].HeaderText = "Region";
+            //dataGridView1.Columns[7].HeaderText = "Country";
+            //dataGridView1.Columns[8].HeaderText = "Department";
+            //foreach (Course course in Seeder.Courses)
+            //{
+            //    //Make an array of strings containing the display data
+            //    string[] tempRow = { $"{course.Code}", $"{course.Name}", $"{course.Description}", $"{course.Credits}", $"${course.Fees}", $"{course.Department.Institution.Name}", $"{course.Department.Institution.Region}", $"{course.Department.Institution.Country}", $"{course.Department.Name}" };
+            //    //Then add the array to the grid as a row
+            //    dataGridView1.Rows.Add(tempRow);
+            //}
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-         RefreshDataGrid(6);
+            //RefreshDataGrid(6);
 
-        dataGridView1.Columns[0].HeaderText = "ID";
-        dataGridView1.Columns[1].HeaderText = "First Name";
-        dataGridView1.Columns[2].HeaderText = "Last Name";
-        dataGridView1.Columns[3].HeaderText = "Course Code";
-        dataGridView1.Columns[4].HeaderText = "Course Name";
-        dataGridView1.Columns[5].HeaderText = "Assessment Marks";
+            //dataGridView1.Columns[0].HeaderText = "ID";
+            //dataGridView1.Columns[1].HeaderText = "First Name";
+            //dataGridView1.Columns[2].HeaderText = "Last Name";
+            //dataGridView1.Columns[3].HeaderText = "Course Code";
+            //dataGridView1.Columns[4].HeaderText = "Course Name";
+            //dataGridView1.Columns[5].HeaderText = "Assessment Marks";
 
-        foreach (Learner learner in Learners)
-        {
-            CourseAssessmentMark courseAssessmentMark =
-                learner.CourseAssessmentMark;
+            //foreach (Learner learner in Learners)
+            //{
+            //    CourseAssessmentMarks courseAssessmentMark =
+            //        learner.assessmentMarks;
 
-            Course course = courseAssessmentMark.Course;
+            //    Course course = courseAssessmentMark.Course;
 
-            // Turns the List<int> of marks into one display string,
-            string marks = string.Join(
-             ", ",
-                courseAssessmentMark.GetAllMarks());
+            //    // Turns the List<int> of marks into one display string,
+            //    string marks = string.Join(
+            //     ", ",
+            //        courseAssessmentMark.GetAllMarks());
 
-            // Make an array of strings containing the display data.
-            string[] tempRow =
-            {
-            $"{learner.Id}",
-            $"{learner.FirstName}",
-            $"{learner.LastName}",
-            $"{course.Code}",
-            $"{course.Name}",
-            $"{marks}"
-            };
+            //    // Make an array of strings containing the display data.
+            //    string[] tempRow =
+            //    {
+            //$"{learner.ID}",
+            //$"{learner.FirstName}",
+            //$"{learner.LastName}",
+            //$"{course.Code}",
+            //$"{course.Name}",
+            ////$"{learner.assessmentMarks.GetAllMarks()"
+            //};
 
-            // Add the array to the DataGridView as a row.
-            dataGridView1.Rows.Add(tempRow);
-        }
+            //    // Add the array to the DataGridView as a row.
+            //    //dataGridView1.Rows.Add(tempRow);
+            //}
+            dataGridView1.DataSource = Learners.Select(n => new
+                {
+                    first_name = n.FirstName,
+                    last_name = n.LastName,
+                    ID = n.ID,
+                    Marks = string.Join(",", n.assessmentMarks.GetAllMarks())
+            }).ToList();
         }
 
         private void button3_Click(object sender, EventArgs e)

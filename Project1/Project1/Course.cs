@@ -25,9 +25,12 @@ namespace Project1
             Fee = fees;
         }
 
-        public Department Department { get => department; set => department = value; }
-        public string Code { get => Codes; set => Codes = value; }
         public string Name { get => Names; set => Names = value; }
+        public string Department { get => department.Name; set => department.Name = value; }
+        public string Institution { get => department.Institution.Name; set => department.Institution.Name = value; }
+        public string Region { get => department.Institution.Region; set => department.Institution.Region = value; }
+        public string Country { get => department.Institution.Country; set => department.Institution.Country = value; }
+        public string Code { get => Codes; set => Codes = value; }
         public string Description { get => Descriptions; set => Descriptions = value; }
         public int Credits { get => Creditss; set => Creditss = value; }
         public int Fees { get => Fee; set => Fee = value; }

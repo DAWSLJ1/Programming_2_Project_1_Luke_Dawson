@@ -16,6 +16,8 @@ namespace Project1
             this.courseAssessmentMarks = Marks;
         }
 
+        public CourseAssessmentMarks assessmentMarks { get => courseAssessmentMarks; set => courseAssessmentMarks = value; }
+
         public override string DisplayDetail()
         {
             return base.DisplayDetail() + $"{courseAssessmentMarks.Course}";
