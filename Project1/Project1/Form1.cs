@@ -125,9 +125,10 @@ namespace Project1
             {
                 ID = n.ID,
                 first_name = n.FirstName,
-                last_name = n.LastName,
-                
+                last_name = n.LastName
+            }).ToList();
         }
+
 
         private void button10_Click(object sender, EventArgs e)
         {
