@@ -36,7 +36,7 @@ namespace Project1
         {
             courses.Add(new Course(departments[0], "ID511001", "Programming 2", "Advanced programming concepts", 15, 3500));
             courses.Add(new Course(departments[1], "ID511002", "Business 1", "Introduction to Business", 15, 3800));
-            courses.Add(new Course(departments[2], "ID511001", "Mathematics 3", "Algebra", 15, 2800));
+            courses.Add(new Course(departments[2], "ID511003", "Mathematics 3", "Algebra", 15, 2800));
             return courses;
         }
     }

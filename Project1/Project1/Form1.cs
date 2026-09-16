@@ -37,12 +37,12 @@ namespace Project1
             Environment.Exit(0);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void DisplayCouseClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Seeder.Courses;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void DisplayMarksClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
                 {
@@ -55,7 +55,7 @@ namespace Project1
             }).ToList();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void DisplayGradesClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
             {
@@ -68,7 +68,7 @@ namespace Project1
             }).ToList();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void DisplayHighMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
             {
@@ -77,11 +77,11 @@ namespace Project1
                 Last_Name = n.LastName,
                 Course_Code = n.assessmentMarks.Course.Code,
                 Course_Name = n.assessmentMarks.Course.Name,
-                Marks = string.Join(",", n.assessmentMarks.GetAllMarks().Where(mark => mark == n.assessmentMarks.GetHighestMark()))
+                Marks = string.Join(",", n.assessmentMarks.GetHighestMark())
             }).ToList();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void DisplayLowMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
             {
@@ -94,7 +94,7 @@ namespace Project1
             }).ToList();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void DisplayFailMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
             {
@@ -107,7 +107,7 @@ namespace Project1
             }).ToList();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void DisplayAvgMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
             {
@@ -120,7 +120,7 @@ namespace Project1
             }).ToList();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void DisplayAvgGradeClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
             {
@@ -133,7 +133,7 @@ namespace Project1
             }).ToList();
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void DisplayLecturerClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null;
 
@@ -144,17 +144,17 @@ namespace Project1
                 last_name = n.LastName,
                 Position = n.Position1.ToString(),
                 Salary = ((int)n.Salary1).ToString("C"),
-                Institution_Name = n.Course1.Institution,
+                Institution = n.Course1.Institution,
                 Region = n.Course1.Region,
                 Country = n.Course1.Country,
-                Department_Name = n.Course1.Department,
+                Department = n.Course1.Department,
                 Course_Code = n.Course1.Code,
                 Course_Name = n.Course1.Name
             }).ToList();
         }
 
 
-        private void button10_Click(object sender, EventArgs e)
+        private void AddLearnerClick(object sender, EventArgs e)
         {
 
         }
