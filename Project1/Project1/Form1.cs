@@ -135,19 +135,21 @@ namespace Project1
 
         private void button9_Click(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = null;
+
             dataGridView1.DataSource = Lecturers.Select(n => new
             {
                 ID = n.ID,
                 first_name = n.FirstName,
-                last_name = n.LastName
-                Position = n.Position.ToString(),
-                Salary = ((int)n.Salary).ToString("C"),
-                Institution_Name = n.Course.Department.Institution.Name,
-                Region = n.Course.Department.Institution.Region,
-                Country = n.Course.Department.Institution.Country,
-                Department_Name = n.Course.Department.Name,
-                Course_Code = n.Course.Code,
-                Course_Name = n.Course.Name
+                last_name = n.LastName,
+                Position = n.Position1.ToString(),
+                Salary = ((int)n.Salary1).ToString("C"),
+                Institution_Name = n.Course1.Institution,
+                Region = n.Course1.Region,
+                Country = n.Course1.Country,
+                Department_Name = n.Course1.Department,
+                Course_Code = n.Course1.Code,
+                Course_Name = n.Course1.Name
             }).ToList();
         }
 

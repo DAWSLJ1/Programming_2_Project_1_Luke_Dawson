@@ -35,6 +35,10 @@ namespace Project1
             this.Salary = salary;
         }
 
+        public Course Course1 { get => Course; set => Course = value; }
+        public EPosition Position1 { get => Position; set => Position = value; }
+        public ESalary Salary1 { get => Salary; set => Salary = value; }
+
         public override string DisplayDetail()
         {
             return base.DisplayDetail() + $"{Course}" + $"{Salary}" + $"{Position}";
