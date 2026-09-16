@@ -193,21 +193,21 @@
             textBox1.Location = new Point(207, 23);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(564, 81);
+            textBox1.Size = new Size(581, 23);
             textBox1.TabIndex = 14;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(207, 186);
+            dataGridView1.Location = new Point(207, 81);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(564, 252);
+            dataGridView1.Size = new Size(581, 357);
             dataGridView1.TabIndex = 15;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(408, 139);
+            label1.Location = new Point(343, 56);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 16;
