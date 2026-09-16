@@ -49,6 +49,8 @@ namespace Project1
                 ID = n.ID,
                 First_Name = n.FirstName,
                 Last_Name = n.LastName,
+                Course_Code = n.assessmentMarks.Course.Code,
+                Course_Name = n.assessmentMarks.Course.Name,
                 Marks = string.Join(",", n.assessmentMarks.GetAllMarks())
             }).ToList();
         }
@@ -60,6 +62,8 @@ namespace Project1
                 ID = n.ID,
                 First_Name = n.FirstName,
                 Last_Name = n.LastName,
+                Course_Code = n.assessmentMarks.Course.Code,
+                Course_Name = n.assessmentMarks.Course.Name,
                 Marks = string.Join(",", n.assessmentMarks.GetAllGrades())
             }).ToList();
         }
@@ -71,7 +75,9 @@ namespace Project1
                 ID = n.ID,
                 First_Name = n.FirstName,
                 Last_Name = n.LastName,
-                Marks = string.Join(",", n.assessmentMarks.GetHighestMark())
+                Course_Code = n.assessmentMarks.Course.Code,
+                Course_Name = n.assessmentMarks.Course.Name,
+                Marks = string.Join(",", n.assessmentMarks.GetAllMarks().Where(mark => mark == n.assessmentMarks.GetHighestMark()))
             }).ToList();
         }
 
@@ -82,6 +88,8 @@ namespace Project1
                 ID = n.ID,
                 First_Name = n.FirstName,
                 Last_Name = n.LastName,
+                Course_Code = n.assessmentMarks.Course.Code,
+                Course_Name = n.assessmentMarks.Course.Name,
                 Marks = string.Join(",", n.assessmentMarks.GetLowestMark())
             }).ToList();
         }
@@ -93,6 +101,8 @@ namespace Project1
                 ID = n.ID,
                 First_Name = n.FirstName,
                 Last_Name = n.LastName,
+                Course_Code = n.assessmentMarks.Course.Code,
+                Course_Name = n.assessmentMarks.Course.Name,
                 Marks = string.Join(",", n.assessmentMarks.GetFailMarks())
             }).ToList();
         }
@@ -104,6 +114,8 @@ namespace Project1
                 ID = n.ID,
                 First_Name = n.FirstName,
                 Last_Name = n.LastName,
+                Course_Code = n.assessmentMarks.Course.Code,
+                Course_Name = n.assessmentMarks.Course.Name,
                 Marks = string.Join(",", n.assessmentMarks.GetAverageMark())
             }).ToList();
         }
@@ -115,6 +127,8 @@ namespace Project1
                 ID = n.ID,
                 First_Name = n.FirstName,
                 Last_Name = n.LastName,
+                Course_Code = n.assessmentMarks.Course.Code,
+                Course_Name = n.assessmentMarks.Course.Name,
                 Marks = string.Join(",", n.assessmentMarks.GetAverageGrade())
             }).ToList();
         }
@@ -126,6 +140,14 @@ namespace Project1
                 ID = n.ID,
                 first_name = n.FirstName,
                 last_name = n.LastName
+                Position = n.Position.ToString(),
+                Salary = ((int)n.Salary).ToString("C"),
+                Institution_Name = n.Course.Department.Institution.Name,
+                Region = n.Course.Department.Institution.Region,
+                Country = n.Course.Department.Institution.Country,
+                Department_Name = n.Course.Department.Name,
+                Course_Code = n.Course.Code,
+                Course_Name = n.Course.Name
             }).ToList();
         }
 
