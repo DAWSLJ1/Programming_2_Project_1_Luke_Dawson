@@ -153,7 +153,26 @@ namespace Project1
             }).ToList();
         }
 
+        private bool IsValidName(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return false;
+            }
 
+            foreach (char character in name) {
+                if (!char.IsLetter(character) && !char.IsLetter(' '))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private int GetNextLearnerId()
+        {
+            return 1;
+        }
         private void AddLearnerClick(object sender, EventArgs e)
         {
         string firstName = Microsoft.VisualBasic.Interaction.InputBox(
@@ -188,9 +207,7 @@ namespace Project1
         string courseNumberText = Microsoft.VisualBasic.Interaction.InputBox(
         "Enter the course number:" +
         Environment.NewLine +
-        Environment.NewLine +
-        GetCourseChoices(),
-        "Add Learner");
+        Environment.NewLine, "Add Learner");
 
         if (!int.TryParse(courseNumberText, out int courseNumber) ||
         courseNumber < 1 ||
