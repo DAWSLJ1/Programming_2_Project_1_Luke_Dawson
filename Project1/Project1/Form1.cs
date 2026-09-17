@@ -156,8 +156,116 @@ namespace Project1
 
         private void AddLearnerClick(object sender, EventArgs e)
         {
+        string firstName = Microsoft.VisualBasic.Interaction.InputBox(
+        "Enter the learner's first name:",
+        "Add Learner");
 
+        if (!IsValidName(firstName))
+        {
+            MessageBox.Show(
+            "First name cannot be empty and can only contain letters, spaces, hyphens, or apostrophes.",
+            "Invalid First Name",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Warning);
+
+        return;
         }
+
+        string lastName = Microsoft.VisualBasic.Interaction.InputBox(
+            "Enter the learner's last name:", "Add Learner");
+
+        if (!IsValidName(lastName))
+        {
+        MessageBox.Show(
+            "Last name cannot be empty and can only contain letters, spaces, hyphens, or apostrophes.",
+            "Invalid Last Name",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Warning);
+
+        return;
+        }
+
+        string courseNumberText = Microsoft.VisualBasic.Interaction.InputBox(
+        "Enter the course number:" +
+        Environment.NewLine +
+        Environment.NewLine +
+        GetCourseChoices(),
+        "Add Learner");
+
+        if (!int.TryParse(courseNumberText, out int courseNumber) ||
+        courseNumber < 1 ||
+        courseNumber > Seeder.Courses.Count)
+        {
+        MessageBox.Show(
+            "Enter a valid course number from the displayed list.",
+            "Invalid Course",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Warning);
+
+        return;
+        }
+
+        // The displayed course numbering starts at 1, but List indexes start at 0.
+        Course selectedCourse = Seeder.Courses[courseNumber - 1];
+
+        List<int> learnerMarks = new List<int>();
+
+        for (int markNumber = 1; markNumber <= 5; markNumber++)
+        {
+        string markText = Microsoft.VisualBasic.Interaction.InputBox(
+            "Enter assessment mark " + markNumber +
+            " of 5 (between 0 and 100):",
+            "Add Learner");
+
+        if (!int.TryParse(markText, out int mark) ||
+            mark < 0 ||
+            mark > 100)
+        {
+            MessageBox.Show(
+                "Assessment marks must be whole numbers from 0 to 100.",
+                "Invalid Assessment Mark",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+
+            return;
+        }
+
+        learnerMarks.Add(mark);
+        }
+
+        int newId = GetNextLearnerId();
+
+        CourseAssessmentMarks assessmentMarks =
+            new CourseAssessmentMarks(
+                selectedCourse,
+                learnerMarks);
+
+        // Your Learner constructor is:
+        // Learner(CourseAssessmentMarks Marks, int iD, string firstName, string lastName)
+        Learner newLearner = new Learner(
+            assessmentMarks,
+            newId,
+            firstName.Trim(),
+            lastName.Trim());
+
+        Learners.Add(newLearner);
+
+        // This method needs to exist in DataHandler.
+        // It saves the changed Learners list back to learners.txt.
+        DataHandler.WriteToLearnFile(
+            "learners.txt", Learners, Seeder.Courses);
+
+        MessageBox.Show(
+            "Learner added successfully." +
+            Environment.NewLine +
+            "Learner ID: " + newId,
+            "Learner Added",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Information);
+
+        // Refresh the DataGridView by showing all marks.
+        DisplayMarksClick(sender, e);
+            }
 
         private void button11_Click(object sender, EventArgs e)
         {
