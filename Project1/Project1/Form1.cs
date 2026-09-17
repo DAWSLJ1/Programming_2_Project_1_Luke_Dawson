@@ -171,7 +171,7 @@ namespace Project1
 
         private int GetNextLearnerId()
         {
-            return 1;
+            return Learners.Count + 1;
         }
         private void AddLearnerClick(object sender, EventArgs e)
         {
@@ -214,7 +214,7 @@ namespace Project1
         courseNumber > Seeder.Courses.Count)
         {
         MessageBox.Show(
-            "Enter a valid course number from the displayed list.",
+            "Enter a valid course number.",
             "Invalid Course",
             MessageBoxButtons.OK,
             MessageBoxIcon.Warning);
@@ -222,7 +222,6 @@ namespace Project1
         return;
         }
 
-        // The displayed course numbering starts at 1, but List indexes start at 0.
         Course selectedCourse = Seeder.Courses[courseNumber - 1];
 
         List<int> learnerMarks = new List<int>();
@@ -257,8 +256,6 @@ namespace Project1
                 selectedCourse,
                 learnerMarks);
 
-        // Your Learner constructor is:
-        // Learner(CourseAssessmentMarks Marks, int iD, string firstName, string lastName)
         Learner newLearner = new Learner(
             assessmentMarks,
             newId,
@@ -267,8 +264,6 @@ namespace Project1
 
         Learners.Add(newLearner);
 
-        // This method needs to exist in DataHandler.
-        // It saves the changed Learners list back to learners.txt.
         DataHandler.WriteToLearnFile(
             "learners.txt", Learners, Seeder.Courses);
 
@@ -280,7 +275,7 @@ namespace Project1
             MessageBoxButtons.OK,
             MessageBoxIcon.Information);
 
-        // Refresh the DataGridView by showing all marks.
+        // Loads all learners to display changed grid
         DisplayMarksClick(sender, e);
             }
 

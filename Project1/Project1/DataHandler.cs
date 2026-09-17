@@ -57,26 +57,29 @@ namespace Project1
         string fileName,
         List<Learner> learners,
         List<Course> courses)
-    {
-        List<string> lines = new List<string>();
-
-        foreach (Learner learner in learners)
         {
-            CourseAssessmentMarks assessmentMarks =
-                learner.assessmentMarks;
+            List<string> lines = new List<string>();
+            using (StreamWriter sr = new StreamWriter(fileName, false))
+            {
 
-            int courseIndex = courses.IndexOf(
-                assessmentMarks.Course);
+                foreach (Learner learner in learners)
+                {
+                    CourseAssessmentMarks assessmentMarks =
+                        learner.assessmentMarks;
 
-            string marks = string.Join(",", assessmentMarks.GetAllMarks());
+                    int courseIndex = courses.IndexOf(
+                        assessmentMarks.Course);
 
-        string line =
-            learner.ID + "," + learner.FirstName + "," + learner.LastName + "," + courseIndex + "," + marks;
-            lines.Add(line);
-    }
+                    string marks = string.Join(",", assessmentMarks.GetAllMarks());
 
-        File.WriteAllLines(fileName, lines);
-}
+                    string line =
+                        learner.ID + "," + learner.FirstName + "," + learner.LastName + "," + courseIndex + "," + marks;
+                    lines.Add(line);
+                }
+
+                sr.WriteLine(fileName, lines);
+            }
+        }
     }
 }
 
