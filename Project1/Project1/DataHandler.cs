@@ -53,6 +53,30 @@ namespace Project1
             }
 
         }
+        public static void WriteToLearnFile(
+        string fileName,
+        List<Learner> learners,
+        List<Course> courses)
+    {
+        List<string> lines = new List<string>();
+
+        foreach (Learner learner in learners)
+        {
+            CourseAssessmentMarks assessmentMarks =
+                learner.assessmentMarks;
+
+            int courseIndex = courses.IndexOf(
+                assessmentMarks.Course);
+
+            string marks = string.Join(",", assessmentMarks.GetAllMarks());
+
+        string line =
+            learner.ID + "," + learner.FirstName + "," + learner.LastName + "," + courseIndex + "," + marks;
+            lines.Add(line);
+    }
+
+        File.WriteAllLines(fileName, lines);
+}
     }
 }
 
