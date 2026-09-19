@@ -77,7 +77,7 @@ namespace Project1
         }
 
         // Update these ranges to match the assignment's grade table.
-        private string GetGrade(int mark)
+        public string GetGrade(int mark)
         {
             if (mark >= 90)
             {

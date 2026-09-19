@@ -289,9 +289,73 @@ namespace Project1
 
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void CalcClick(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Yes: Display average assessment marks and grades for each institution" + Environment.NewLine + Environment.NewLine + "No: Display average salary of all lecturers" + Environment.NewLine + Environment.NewLine + "", "Course Statistics Calculations", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                DisplayInstAvgResults();
+            }
+            else if (result == DialogResult.No)
+            {
+                //DisplayAvgLecSal();
+            }
+        }
+        private void DisplayInstAvgResults()
+        {
+            dataGridView1.DataSource = null;
+            var institutionResults = Learners.GroupBy(learner => learner.assessmentMarks.Course.Institution).Select(group => new
+            {
+                Institution_Name = group.Key,
+                Learner_Count = group.Count(),
+                Average_Marks = group.SelectMany(learner => learner.assessmentMarks.GetAllMarks()).Average().ToString("0.00"),
+                Average_Grade = GetGradeFromMark(group.SelectMany(learner => learner.assessmentMarks.GetAllMarks()).Average())
+            }).ToList();
 
+            dataGridView1.DataSource = institutionResults;
+        }
+        private string GetGradeFromMark(double avgMark)
+        {
+            if (avgMark >= 90)
+            {
+                return "A+";
+            }
+            else if (avgMark >= 85)
+            {
+                return "A";
+            }
+            else if (avgMark >= 80)
+            {
+                return "A-";
+            }
+            else if (avgMark >= 75)
+            {
+                return "B+";
+            }
+            else if (avgMark >= 70)
+            {
+                return "B";
+            }
+            else if (avgMark >= 65)
+            {
+                return "B-";
+            }
+            else if (avgMark >= 60)
+            {
+                return "C+";
+            }
+            else if (avgMark >= 55)
+            {
+                return "C";
+            }
+            else if (avgMark >= 50)
+            {
+                return "C-";
+            }
+            else
+            {
+                return "Fail";
+            }
         }
     }
 }
