@@ -298,8 +298,21 @@ namespace Project1
             }
             else if (result == DialogResult.No)
             {
-                //DisplayAvgLecSal();
+                DisplayAvgLecSal();
             }
+        }
+
+        private void DisplayAvgLecSal()
+        {
+            double averageSalary = Lecturers.Average(lecturer => (int)lecturer.Salary1);
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = new[]
+            {
+                new
+                {
+                    Lecturer_Count = Lecturers.Count, Avg_Lec_Salary = averageSalary.ToString("C")
+                }
+            };
         }
         private void DisplayInstAvgResults()
         {
