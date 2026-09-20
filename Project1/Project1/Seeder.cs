@@ -20,6 +20,7 @@ namespace Project1
         /// creates a list of Institutions which has each entry manually inputed into it
         /// </summary>
         /// <returns></returns>
+        
         public static List<Institution> SeedInstitutions()
         {
             institutions.Add(new Institution("Otago Polytechnic", "Otago", "New Zealand"));
@@ -32,6 +33,7 @@ namespace Project1
         /// creates a list of departments which has each entry manually inputed into it
         /// </summary>
         /// <returns></returns>
+        
         public static List<Department> SeedDepartments()
         {
             departments.Add(new Department(institutions[0], "Information Technology"));
@@ -44,6 +46,7 @@ namespace Project1
         /// creates a list of Courses which has each entry manually inputed into it
         /// </summary>
         /// <returns></returns>
+        
         public static List<Course> SeedCourses()
         {
             courses.Add(new Course(departments[0], "ID511001", "Programming 2", "Advanced programming concepts", 15, 3500));
