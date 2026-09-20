@@ -18,13 +18,19 @@ namespace Project1
             this.AssessmentMarks = assessmentMarks;
         }
 
-        // Returns every assessment mark.
+        /// <summary>
+        /// Returns all marks for every learner
+        /// </summary>
+        /// <returns></returns>
         public List<int> GetAllMarks()
         {
             return AssessmentMarks;
         }
 
-        // Returns a grade for every assessment mark.
+        /// <summary>
+        /// Creates a list that displays the grade of each test for each learner
+        /// </summary>
+        /// <returns></returns>
         public List<string> GetAllGrades()
         {
             List<string> grades = new List<string>();
@@ -37,17 +43,28 @@ namespace Project1
             return grades;
         }
 
+        /// <summary>
+        /// Returns the mark with the highest value
+        /// </summary>
+        /// <returns></returns>
         public int GetHighestMark()
         {
             return AssessmentMarks.Max();
         }
 
+        /// <summary>
+        /// Returns the mark with the lowest value
+        /// </summary>
+        /// <returns></returns>
         public int GetLowestMark()
         {
             return AssessmentMarks.Min();
         }
 
-        // Returns all marks if below 50.
+        /// <summary>
+        /// Returns certain marks if the amount of marks is below 50
+        /// </summary>
+        /// <returns></returns>
         public List<int> GetFailMarks()
         {
             List<int> failMarks = new List<int>();
@@ -63,20 +80,31 @@ namespace Project1
             return failMarks;
         }
 
+        /// <summary>
+        /// Averages the amount of marks across all learners
+        /// </summary>
+        /// <returns></returns>
         public double GetAverageMark()
         {
             return AssessmentMarks.Average();
         }
 
-        // Finds the grade based on the average mark.
+        /// <summary>
+        /// Assigns a grade based on the average of all marks
+        /// </summary>
+        /// <returns></returns>
         public string GetAverageGrade()
         {
             double average = GetAverageMark();
 
             return GetGrade((int)Math.Round(average));
         }
+        /// <summary>
+        /// Assigns grade based on total amount of marks from a test
+        /// </summary>
+        /// <param name="mark"></param>
+        /// <returns></returns>
 
-        // Update these ranges to match the assignment's grade table.
         public string GetGrade(int mark)
         {
             if (mark >= 90)

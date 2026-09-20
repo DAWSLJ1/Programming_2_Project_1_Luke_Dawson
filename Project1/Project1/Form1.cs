@@ -4,6 +4,9 @@ namespace Project1
     {
         public List<Learner> Learners = new();
         public List<Lecturer> Lecturers = new();
+        /// <summary>
+        /// Assigns names of all buttons & labels
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -42,6 +45,11 @@ namespace Project1
             dataGridView1.DataSource = Seeder.Courses;
         }
 
+        /// <summary>
+        /// Displays all marks across all learners in the text file by displaying all learners information & converting the marks into a listed string
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DisplayMarksClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -55,6 +63,11 @@ namespace Project1
             }).ToList();
         }
 
+        /// <summary>
+        /// Displays the grades of all the learners by refering to a method in CourseAssessmentMarks which gives a lettered grade based on the amount of marks a learner has on a select test
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DisplayGradesClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -68,6 +81,11 @@ namespace Project1
             }).ToList();
         }
 
+        /// <summary>
+        /// Displays the highest mark of all the given marks for each learner
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DisplayHighMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -81,6 +99,11 @@ namespace Project1
             }).ToList();
         }
 
+        /// <summary>
+        /// Displays the lowest mark of all the given marks for each learner
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DisplayLowMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -94,6 +117,11 @@ namespace Project1
             }).ToList();
         }
 
+        /// <summary>
+        /// Displays all the marks that are classed as a failing mark, (Any mark that is under 50), for each learner
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DisplayFailMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -107,6 +135,11 @@ namespace Project1
             }).ToList();
         }
 
+        /// <summary>
+        /// Displays the average mark amount for all learners
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DisplayAvgMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -120,6 +153,11 @@ namespace Project1
             }).ToList();
         }
 
+        /// <summary>
+        /// Displays the average grade for all learners
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DisplayAvgGradeClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -133,6 +171,11 @@ namespace Project1
             }).ToList();
         }
 
+        /// <summary>
+        /// Displays all information about each lecturer in the text file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DisplayLecturerClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null;
@@ -153,6 +196,11 @@ namespace Project1
             }).ToList();
         }
 
+        /// <summary>
+        /// Method for any invalid input for name, if input is left empty
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         private bool IsValidName(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -169,10 +217,20 @@ namespace Project1
             return true;
         }
 
+        /// <summary>
+        /// Adds 1 to each added learners ID number
+        /// </summary>
+        /// <returns></returns>
         private int GetNextLearnerId()
         {
             return Learners.Count + 1;
         }
+        /// <summary>
+        /// Displays menu for adding an additional learner to the database
+        /// Displayed in 5 different message boxes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddLearnerClick(object sender, EventArgs e)
         {
         string firstName = Microsoft.VisualBasic.Interaction.InputBox(
@@ -286,9 +344,14 @@ namespace Project1
 
         private void button12_Click(object sender, EventArgs e)
         {
-
+            //No attempt
         }
 
+        /// <summary>
+        /// Displays menu for displaying calculations for certain aspects of the database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CalcClick(object sender, EventArgs e)
         {
             string result = Microsoft.VisualBasic.Interaction.InputBox("Select choice of Calculation" + Environment.NewLine + Environment.NewLine + "1. Average marks and grades for each institution" + Environment.NewLine + "2. Average salary of all lecturers" + Environment.NewLine + "3. Total fees collected for each course" + Environment.NewLine + "4. Completion Rate of all Courses", "Calculations");
@@ -314,6 +377,9 @@ namespace Project1
             }
         }
 
+        /// <summary>
+        /// Displays the completion rate of each course, consisting of the amount of learners in each course and how many passed
+        /// </summary>
         private void CompleteRate()
         {
             dataGridView1.DataSource = null;
@@ -327,6 +393,12 @@ namespace Project1
             }).ToList();
             }
 
+        /// <summary>
+        /// creates int value based on how many learners have inputs for all 5 marks and checks if all are over 50 marks
+        /// Then divides the amount by the total amount of learners in that certain course
+        /// </summary>
+        /// <param name="course"></param>
+        /// <returns></returns>
         private double GetCompleteRate(Course course)
         {
             int learnerAmount = Learners.Count(learner => learner.assessmentMarks.Course == course);
@@ -335,6 +407,9 @@ namespace Project1
             return (double)completeLearnerAmount / learnerAmount * 100;
         }
 
+        /// <summary>
+        /// Displays the amount of learners in each course, the cost of how much each course is, and then multiplies them to get the total amount spent on each course
+        /// </summary>
         private void TotalFee()
         {
             List<object> feeResults = new List<object>();
@@ -355,6 +430,9 @@ namespace Project1
             dataGridView1.DataSource = feeResults;
         }
 
+        /// <summary>
+        /// Displays average salary by taking all the salaries of all lecturers and averaging the total
+        /// </summary>
         private void DisplayAvgLecSal()
         {
             double averageSalary = Lecturers.Average(lecturer => (int)lecturer.Salary1);
@@ -367,6 +445,10 @@ namespace Project1
                 }
             };
         }
+
+        /// <summary>
+        /// Displays the average marks and grades across each institution
+        /// </summary>
         private void DisplayInstAvgResults()
         {
             dataGridView1.DataSource = null;
@@ -380,6 +462,12 @@ namespace Project1
 
             dataGridView1.DataSource = institutionResults;
         }
+
+        /// <summary>
+        /// Assigns an average grade based on the average of each learners marks
+        /// </summary>
+        /// <param name="avgMark"></param>
+        /// <returns></returns>
         private string GetGradeFromMark(double avgMark)
         {
             if (avgMark >= 90)

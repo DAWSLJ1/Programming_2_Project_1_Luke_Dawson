@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Project1
 {
+    /// <summary>
+    /// Creates an enum for each position's ID value
+    /// </summary>
     public enum EPosition
     {
         Lecturer = 0,
@@ -14,6 +17,9 @@ namespace Project1
         Associate_Professor = 3,
         Professor = 4
     }
+    /// <summary>
+    /// Creates an enum for each position's salary
+    /// </summary>
     public enum ESalary
     {
         Lecturer_Salary = 85000,

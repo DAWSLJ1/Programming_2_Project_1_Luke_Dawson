@@ -9,6 +9,13 @@ namespace Project1
     public class DataHandler
     {
 
+        /// <summary>
+        /// Reads the "learner.txt" file and applies the format to align with each variable for each learner
+        /// Some variables may be converted from string to match it's ideal format
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <param name="learners"></param>
+        /// <param name="courses"></param>
         public static void ReadFromLearnFile(string filePath, List<Learner> learners, List<Course> courses)
         {
             List<string> lines = File.ReadAllLines(filePath).ToList();
@@ -34,6 +41,13 @@ namespace Project1
                 learners.Add(learner);
             }
         }
+        /// <summary>
+        /// Reads the "lecturer.txt" file and applies the format to align with each variable for each lecturer
+        /// Some variables may be converted from string to match it's ideal format
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <param name="lecturers"></param>
+        /// <param name="courses"></param>
         public static void ReadFromLecFile(string filePath, List<Lecturer> lecturers, List<Course> courses)
         {
             List<string> lines = File.ReadAllLines(filePath).ToList();
@@ -53,6 +67,12 @@ namespace Project1
             }
 
         }
+        /// <summary>
+        /// Rewrites "learner.txt" file so that it display all learners, including additonally added ones in the correct format as the previous input using StreamWriter
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <param name="learners"></param>
+        /// <param name="courses"></param>
         public static void WriteToLearnFile(
         string fileName,
         List<Learner> learners,
