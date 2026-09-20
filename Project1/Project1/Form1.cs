@@ -281,7 +281,7 @@ namespace Project1
 
         private void button11_Click(object sender, EventArgs e)
         {
-
+            //No attempt
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -291,15 +291,39 @@ namespace Project1
 
         private void CalcClick(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Yes: Display average assessment marks and grades for each institution" + Environment.NewLine + Environment.NewLine + "No: Display average salary of all lecturers" + Environment.NewLine + Environment.NewLine + "", "Course Statistics Calculations", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            string result = Microsoft.VisualBasic.Interaction.InputBox("Select choice of Calculation" + Environment.NewLine + Environment.NewLine + "1. Average marks and grades for each institution" + Environment.NewLine + "2. Average salary of all lecturers" + Environment.NewLine + "3. Total fees collected for each course", "Calculations");
+            if (result == "1")
             {
                 DisplayInstAvgResults();
             }
-            else if (result == DialogResult.No)
+            else if (result == "2")
             {
                 DisplayAvgLecSal();
             }
+            else if (result == "3")
+            {
+                TotalFee();
+            }
+        }
+
+        private void TotalFee()
+        {
+            List<object> feeResults = new List<object>();
+            foreach (Course course in Seeder.Courses)
+            {
+                int learnerCount = Learners.Count(learner => learner.assessmentMarks.Course == course);
+                int totalfees = learnerCount * course.Fees;
+                feeResults.Add(new
+                {
+                    Course_Code = course.Code,
+                    Course_Name = course.Name,
+                    Number_Of_Learners = learnerCount,
+                    Course_Fee = course.Fees.ToString("C"),
+                    Total_Fees = totalfees.ToString("C")
+                });
+            }
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = feeResults;
         }
 
         private void DisplayAvgLecSal()

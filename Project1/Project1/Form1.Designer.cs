@@ -42,7 +42,6 @@
             button12 = new Button();
             button13 = new Button();
             button14 = new Button();
-            textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -50,9 +49,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(12, 23);
+            button1.Location = new Point(14, 31);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(177, 23);
+            button1.Size = new Size(202, 31);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -60,9 +60,10 @@
             // 
             // button2
             // 
-            button2.Location = new Point(12, 52);
+            button2.Location = new Point(14, 69);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(177, 23);
+            button2.Size = new Size(202, 31);
             button2.TabIndex = 1;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
@@ -70,9 +71,10 @@
             // 
             // button3
             // 
-            button3.Location = new Point(12, 81);
+            button3.Location = new Point(14, 108);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(177, 23);
+            button3.Size = new Size(202, 31);
             button3.TabIndex = 2;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
@@ -80,9 +82,10 @@
             // 
             // button4
             // 
-            button4.Location = new Point(12, 110);
+            button4.Location = new Point(14, 147);
+            button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
-            button4.Size = new Size(177, 23);
+            button4.Size = new Size(202, 31);
             button4.TabIndex = 3;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
@@ -90,9 +93,10 @@
             // 
             // button5
             // 
-            button5.Location = new Point(12, 139);
+            button5.Location = new Point(14, 185);
+            button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
-            button5.Size = new Size(177, 23);
+            button5.Size = new Size(202, 31);
             button5.TabIndex = 4;
             button5.Text = "button5";
             button5.UseVisualStyleBackColor = true;
@@ -100,9 +104,10 @@
             // 
             // button6
             // 
-            button6.Location = new Point(12, 168);
+            button6.Location = new Point(14, 224);
+            button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
-            button6.Size = new Size(177, 23);
+            button6.Size = new Size(202, 31);
             button6.TabIndex = 5;
             button6.Text = "button6";
             button6.UseVisualStyleBackColor = true;
@@ -110,9 +115,10 @@
             // 
             // button7
             // 
-            button7.Location = new Point(12, 197);
+            button7.Location = new Point(14, 263);
+            button7.Margin = new Padding(3, 4, 3, 4);
             button7.Name = "button7";
-            button7.Size = new Size(177, 23);
+            button7.Size = new Size(202, 31);
             button7.TabIndex = 6;
             button7.Text = "button7";
             button7.UseVisualStyleBackColor = true;
@@ -120,9 +126,10 @@
             // 
             // button8
             // 
-            button8.Location = new Point(12, 226);
+            button8.Location = new Point(14, 301);
+            button8.Margin = new Padding(3, 4, 3, 4);
             button8.Name = "button8";
-            button8.Size = new Size(177, 23);
+            button8.Size = new Size(202, 31);
             button8.TabIndex = 7;
             button8.Text = "button8";
             button8.UseVisualStyleBackColor = true;
@@ -130,9 +137,10 @@
             // 
             // button9
             // 
-            button9.Location = new Point(12, 255);
+            button9.Location = new Point(14, 340);
+            button9.Margin = new Padding(3, 4, 3, 4);
             button9.Name = "button9";
-            button9.Size = new Size(177, 23);
+            button9.Size = new Size(202, 31);
             button9.TabIndex = 8;
             button9.Text = "button9";
             button9.UseVisualStyleBackColor = true;
@@ -140,9 +148,10 @@
             // 
             // button10
             // 
-            button10.Location = new Point(12, 284);
+            button10.Location = new Point(14, 379);
+            button10.Margin = new Padding(3, 4, 3, 4);
             button10.Name = "button10";
-            button10.Size = new Size(177, 23);
+            button10.Size = new Size(202, 31);
             button10.TabIndex = 9;
             button10.Text = "button10";
             button10.UseVisualStyleBackColor = true;
@@ -150,9 +159,10 @@
             // 
             // button11
             // 
-            button11.Location = new Point(12, 313);
+            button11.Location = new Point(14, 417);
+            button11.Margin = new Padding(3, 4, 3, 4);
             button11.Name = "button11";
-            button11.Size = new Size(177, 23);
+            button11.Size = new Size(202, 31);
             button11.TabIndex = 10;
             button11.Text = "button11";
             button11.UseVisualStyleBackColor = true;
@@ -160,9 +170,10 @@
             // 
             // button12
             // 
-            button12.Location = new Point(12, 342);
+            button12.Location = new Point(14, 456);
+            button12.Margin = new Padding(3, 4, 3, 4);
             button12.Name = "button12";
-            button12.Size = new Size(177, 23);
+            button12.Size = new Size(202, 31);
             button12.TabIndex = 11;
             button12.Text = "button12";
             button12.UseVisualStyleBackColor = true;
@@ -170,9 +181,10 @@
             // 
             // button13
             // 
-            button13.Location = new Point(12, 371);
+            button13.Location = new Point(14, 495);
+            button13.Margin = new Padding(3, 4, 3, 4);
             button13.Name = "button13";
-            button13.Size = new Size(177, 23);
+            button13.Size = new Size(202, 31);
             button13.TabIndex = 12;
             button13.Text = "button13";
             button13.UseVisualStyleBackColor = true;
@@ -180,48 +192,42 @@
             // 
             // button14
             // 
-            button14.Location = new Point(12, 415);
+            button14.Location = new Point(14, 553);
+            button14.Margin = new Padding(3, 4, 3, 4);
             button14.Name = "button14";
-            button14.Size = new Size(177, 23);
+            button14.Size = new Size(202, 31);
             button14.TabIndex = 13;
             button14.Text = "button14";
             button14.UseVisualStyleBackColor = true;
             button14.Click += button14_Click;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(207, 23);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(581, 23);
-            textBox1.TabIndex = 14;
-            // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(207, 81);
+            dataGridView1.Location = new Point(237, 85);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(581, 357);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1004, 499);
             dataGridView1.TabIndex = 15;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(343, 56);
+            label1.Location = new Point(521, 31);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(50, 20);
             label1.TabIndex = 16;
             label1.Text = "label1";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1271, 600);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
-            Controls.Add(textBox1);
             Controls.Add(button14);
             Controls.Add(button13);
             Controls.Add(button12);
@@ -236,6 +242,7 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -259,7 +266,6 @@
         private Button button12;
         private Button button13;
         private Button button14;
-        private TextBox textBox1;
         private DataGridView dataGridView1;
         private Label label1;
     }
