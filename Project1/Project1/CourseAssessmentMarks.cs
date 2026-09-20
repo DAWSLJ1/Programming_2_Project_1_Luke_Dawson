@@ -22,6 +22,7 @@ namespace Project1
         /// Returns all marks for every learner
         /// </summary>
         /// <returns></returns>
+        
         public List<int> GetAllMarks()
         {
             return AssessmentMarks;
@@ -31,6 +32,7 @@ namespace Project1
         /// Creates a list that displays the grade of each test for each learner
         /// </summary>
         /// <returns></returns>
+        
         public List<string> GetAllGrades()
         {
             List<string> grades = new List<string>();
@@ -47,6 +49,7 @@ namespace Project1
         /// Returns the mark with the highest value
         /// </summary>
         /// <returns></returns>
+        
         public int GetHighestMark()
         {
             return AssessmentMarks.Max();
@@ -56,6 +59,7 @@ namespace Project1
         /// Returns the mark with the lowest value
         /// </summary>
         /// <returns></returns>
+        
         public int GetLowestMark()
         {
             return AssessmentMarks.Min();
@@ -65,6 +69,7 @@ namespace Project1
         /// Returns certain marks if the amount of marks is below 50
         /// </summary>
         /// <returns></returns>
+        
         public List<int> GetFailMarks()
         {
             List<int> failMarks = new List<int>();
@@ -84,6 +89,7 @@ namespace Project1
         /// Averages the amount of marks across all learners
         /// </summary>
         /// <returns></returns>
+        
         public double GetAverageMark()
         {
             return AssessmentMarks.Average();
@@ -93,6 +99,7 @@ namespace Project1
         /// Assigns a grade based on the average of all marks
         /// </summary>
         /// <returns></returns>
+        
         public string GetAverageGrade()
         {
             double average = GetAverageMark();
