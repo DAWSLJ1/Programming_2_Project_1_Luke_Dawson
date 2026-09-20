@@ -291,7 +291,7 @@ namespace Project1
 
         private void CalcClick(object sender, EventArgs e)
         {
-            string result = Microsoft.VisualBasic.Interaction.InputBox("Select choice of Calculation" + Environment.NewLine + Environment.NewLine + "1. Average marks and grades for each institution" + Environment.NewLine + "2. Average salary of all lecturers" + Environment.NewLine + "3. Total fees collected for each course", "Calculations");
+            string result = Microsoft.VisualBasic.Interaction.InputBox("Select choice of Calculation" + Environment.NewLine + Environment.NewLine + "1. Average marks and grades for each institution" + Environment.NewLine + "2. Average salary of all lecturers" + Environment.NewLine + "3. Total fees collected for each course" + Environment.NewLine + "4. Completion Rate of all Courses", "Calculations");
             if (result == "1")
             {
                 DisplayInstAvgResults();
@@ -304,6 +304,35 @@ namespace Project1
             {
                 TotalFee();
             }
+            else if (result == "4")
+            {
+                CompleteRate();
+            }
+            else if (!string.IsNullOrWhiteSpace(result))
+            {
+                MessageBox.Show("Enter valid option", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void CompleteRate()
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = Seeder.Courses.Select(course => new
+            {
+                Course_Code = course.Code,
+                Couse_Name = course.Name,
+                Number_Of_Learners = Learners.Count(learner => learner.assessmentMarks.Course == course),
+                Learner_Completed = Learners.Count(learner => learner.assessmentMarks.Course == course && learner.assessmentMarks.GetAllGrades().Count == 5 && learner.assessmentMarks.GetAllMarks().All(mark => mark >= 50)),
+                Completed_Rate = GetCompleteRate(course).ToString("0.00") + "%"
+            }).ToList();
+            }
+
+        private double GetCompleteRate(Course course)
+        {
+            int learnerAmount = Learners.Count(learner => learner.assessmentMarks.Course == course);
+            //Checking to see if all marks are there and if all are above 50 marks for each test
+            int completeLearnerAmount = Learners.Count(learner => learner.assessmentMarks.Course == course && learner.assessmentMarks.GetAllMarks().Count == 5 && learner.assessmentMarks.GetAllMarks().All(mark => mark >= 50));
+            return (double)completeLearnerAmount / learnerAmount * 100;
         }
 
         private void TotalFee()
