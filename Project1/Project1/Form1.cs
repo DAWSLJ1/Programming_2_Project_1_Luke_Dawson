@@ -34,6 +34,7 @@ namespace Project1
             DataHandler.ReadFromLearnFile("learners.txt", Learners, Seeder.Courses);
             DataHandler.ReadFromLecFile("lecturers.txt", Lecturers, Seeder.Courses);
         }
+        
         private void button14_Click(object sender, EventArgs e)
         {
             //Closes application
@@ -50,6 +51,7 @@ namespace Project1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        
         private void DisplayMarksClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -68,6 +70,7 @@ namespace Project1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        
         private void DisplayGradesClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -86,6 +89,7 @@ namespace Project1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        
         private void DisplayHighMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -104,6 +108,7 @@ namespace Project1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        
         private void DisplayLowMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -122,6 +127,7 @@ namespace Project1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        
         private void DisplayFailMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -140,6 +146,7 @@ namespace Project1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        
         private void DisplayAvgMarkClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -158,6 +165,7 @@ namespace Project1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        
         private void DisplayAvgGradeClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Learners.Select(n => new
@@ -176,6 +184,7 @@ namespace Project1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        
         private void DisplayLecturerClick(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null;
@@ -201,6 +210,7 @@ namespace Project1
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
+        
         private bool IsValidName(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -221,16 +231,19 @@ namespace Project1
         /// Adds 1 to each added learners ID number
         /// </summary>
         /// <returns></returns>
+        
         private int GetNextLearnerId()
         {
             return Learners.Count + 1;
         }
+        
         /// <summary>
         /// Displays menu for adding an additional learner to the database
         /// Displayed in 5 different message boxes
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        
         private void AddLearnerClick(object sender, EventArgs e)
         {
         string firstName = Microsoft.VisualBasic.Interaction.InputBox(
@@ -352,6 +365,7 @@ namespace Project1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        
         private void CalcClick(object sender, EventArgs e)
         {
             string result = Microsoft.VisualBasic.Interaction.InputBox("Select choice of Calculation" + Environment.NewLine + Environment.NewLine + "1. Average marks and grades for each institution" + Environment.NewLine + "2. Average salary of all lecturers" + Environment.NewLine + "3. Total fees collected for each course" + Environment.NewLine + "4. Completion Rate of all Courses", "Calculations");
@@ -380,6 +394,7 @@ namespace Project1
         /// <summary>
         /// Displays the completion rate of each course, consisting of the amount of learners in each course and how many passed
         /// </summary>
+        
         private void CompleteRate()
         {
             dataGridView1.DataSource = null;
@@ -399,6 +414,7 @@ namespace Project1
         /// </summary>
         /// <param name="course"></param>
         /// <returns></returns>
+        
         private double GetCompleteRate(Course course)
         {
             int learnerAmount = Learners.Count(learner => learner.assessmentMarks.Course == course);
@@ -410,6 +426,7 @@ namespace Project1
         /// <summary>
         /// Displays the amount of learners in each course, the cost of how much each course is, and then multiplies them to get the total amount spent on each course
         /// </summary>
+        
         private void TotalFee()
         {
             List<object> feeResults = new List<object>();
@@ -433,6 +450,7 @@ namespace Project1
         /// <summary>
         /// Displays average salary by taking all the salaries of all lecturers and averaging the total
         /// </summary>
+        
         private void DisplayAvgLecSal()
         {
             double averageSalary = Lecturers.Average(lecturer => (int)lecturer.Salary1);
@@ -449,6 +467,7 @@ namespace Project1
         /// <summary>
         /// Displays the average marks and grades across each institution
         /// </summary>
+        
         private void DisplayInstAvgResults()
         {
             dataGridView1.DataSource = null;
@@ -468,6 +487,7 @@ namespace Project1
         /// </summary>
         /// <param name="avgMark"></param>
         /// <returns></returns>
+        
         private string GetGradeFromMark(double avgMark)
         {
             if (avgMark >= 90)
