@@ -22,7 +22,7 @@ namespace Project2
                 string correct = questionDetails[5];
                 List<string> incorrect = new List<string>()
                 {
-                    questionDetails[6], questionDetails[7], questionDetails[8],
+                    questionDetails[6], questionDetails[7], questionDetails[8]
                 };
 
             }
