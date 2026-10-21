@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace Project2
 {
-    internal class Player
+    public class Player
     {
+        private string name;
+        private int age;
+        private string hobbies;
+        private string job;
+
+        public Player(string name, int age, string hobbies, string job)
+        {
+            this.name = name;
+            this.age = age;
+            this.hobbies = hobbies;
+            this.job = job;
+        }
+
+        public string Name { get => name; set => name = value; }
+        public int Age { get => age; set => age = value; }
+        public string Hobbies { get => hobbies; set => hobbies = value; }
+        public string Job { get => job; set => job = value; }
     }
 }
