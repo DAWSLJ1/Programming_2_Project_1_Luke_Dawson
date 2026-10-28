@@ -47,6 +47,7 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
+            label8 = new Label();
             SuspendLayout();
             // 
             // label2
@@ -179,7 +180,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(737, 485);
+            label3.Location = new Point(737, 506);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 26;
@@ -221,11 +222,21 @@
             label7.TabIndex = 30;
             label7.Text = "label7";
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(737, 486);
+            label8.Name = "label8";
+            label8.Size = new Size(38, 15);
+            label8.TabIndex = 31;
+            label8.Text = "label8";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(897, 529);
+            Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -246,7 +257,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Who Want's To Be A Millionaire";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -272,5 +283,6 @@
         private Label label5;
         private Label label6;
         private Label label7;
+        private Label label8;
     }
 }

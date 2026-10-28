@@ -11,7 +11,16 @@ namespace Project2
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            string selectedCategory;
+            using(Category categoryForm = new Category())
+            {
+                if (categoryForm.ShowDialog() != DialogResult.OK)
+                {
+                    return;
+                }
+                selectedCategory = categoryForm.SelectedCategory;
+            }
+            Application.Run(new Form1(selectedCategory));
         }
     }
 }

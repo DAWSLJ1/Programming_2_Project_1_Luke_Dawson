@@ -24,35 +24,41 @@ namespace Project2
             button5.Text = "Music";
             button6.Text = "Sports";
         }
+        public string SelectedCategory { get; private set; } = "";
+        private void OpenGame(string category)
+        {
+            SelectedCategory = category;
+            DialogResult = DialogResult.OK;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            OpenGame("Art");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            OpenGame("Science: Computers");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            OpenGame("General Knowledge");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            OpenGame("History");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            OpenGame("Entertainment: Music");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            
+            OpenGame("Sports");
         }
     }
 }
