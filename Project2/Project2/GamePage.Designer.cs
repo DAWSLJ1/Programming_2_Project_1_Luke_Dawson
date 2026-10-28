@@ -38,6 +38,8 @@
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
+            textBox2 = new TextBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -81,13 +83,14 @@
             textBox1.Location = new Point(565, 45);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             textBox1.Size = new Size(223, 393);
             textBox1.TabIndex = 4;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(668, 18);
+            label1.Location = new Point(652, 18);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 5;
@@ -129,11 +132,31 @@
             button8.Text = "button8";
             button8.UseVisualStyleBackColor = true;
             // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(12, 45);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.Size = new Size(540, 129);
+            textBox2.TabIndex = 10;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(265, 18);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 15);
+            label2.TabIndex = 11;
+            label2.Text = "label2";
+            // 
             // GamePage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
+            Controls.Add(textBox2);
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button6);
@@ -162,5 +185,7 @@
         private Button button6;
         private Button button7;
         private Button button8;
+        private TextBox textBox2;
+        private Label label2;
     }
 }

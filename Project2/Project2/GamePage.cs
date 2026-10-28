@@ -24,6 +24,7 @@ namespace Project2
             button6.Text = "Ask Audience";
             button7.Text = "Phone A Friend";
             button8.Text = "Change Question";
+            textBox1.Text = "$1,000,000 \r\n$500,000 \r\n$250,000 \r\n$125,000 \r\n$64,000 \r\n$32,000 – Bank level \r\n$16,000 \r\n$8,000 \r\n$4,000 \r\n$2,000 \r\n$1,000 – Bank level \r\n$500 \r\n$300 \r\n$200 \r\n$100 ";
 
         }
     }

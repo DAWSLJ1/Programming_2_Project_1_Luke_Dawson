@@ -17,7 +17,7 @@ namespace Project2
         List<Question> questions =
             JsonSerializer.Deserialize<List<Question>>(json)
             ?? throw new InvalidDataException(
-                "The question file does not contain a question list.");
+                "No questions in list");
 
         return questions;
     }
