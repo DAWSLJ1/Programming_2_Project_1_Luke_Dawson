@@ -40,6 +40,9 @@
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
+            button9 = new Button();
+            button10 = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label2
@@ -111,7 +114,7 @@
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(223, 393);
+            textBox1.Size = new Size(223, 362);
             textBox1.TabIndex = 16;
             // 
             // button4
@@ -150,11 +153,42 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
+            // button9
+            // 
+            button9.Location = new Point(182, 330);
+            button9.Name = "button9";
+            button9.Size = new Size(97, 44);
+            button9.TabIndex = 24;
+            button9.Text = "button9";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
+            // 
+            // button10
+            // 
+            button10.Location = new Point(285, 330);
+            button10.Name = "button10";
+            button10.Size = new Size(97, 44);
+            button10.TabIndex = 25;
+            button10.Text = "button10";
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(640, 420);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 15);
+            label3.TabIndex = 26;
+            label3.Text = "label3";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
+            Controls.Add(button10);
+            Controls.Add(button9);
             Controls.Add(label2);
             Controls.Add(textBox2);
             Controls.Add(button8);
@@ -187,5 +221,8 @@
         private Button button3;
         private Button button2;
         private Button button1;
+        private Button button9;
+        private Button button10;
+        private Label label3;
     }
 }

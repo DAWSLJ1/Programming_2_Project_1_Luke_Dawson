@@ -16,7 +16,7 @@ namespace Project2
         {
             InitializeComponent();
             label1.Font = new Font("Arial", 14, FontStyle.Bold);
-            label1.Text = "Choose Your Category";
+            label1.Text = "Choose Your Easy Category";
             button1.Text = "Art";
             button2.Text = "Computers";
             button3.Text = "Gen-Knowledge";
@@ -25,5 +25,34 @@ namespace Project2
             button6.Text = "Sports";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

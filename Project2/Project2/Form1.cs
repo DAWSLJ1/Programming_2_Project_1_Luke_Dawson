@@ -5,22 +5,35 @@ namespace Project2
         public Form1()
         {
             InitializeComponent();
+            string difficultySet = "Easy";
+            int questionNumber = 1;
             label1.Text = "Money Tree";
             label1.Font = new Font("Arial", 10, FontStyle.Bold);
+            label2.Text = ($"Question {questionNumber}");
+            label2.Font = new Font("Arial", 12, FontStyle.Bold);
             //button1.Text = Question;
             //button2.Text = Question;
             //button3.Text = Question;
             //button4.Text = Question;
+            //textBox2.Text = Question;
             button5.Text = "50/50";
             button6.Text = "Ask Audience";
             button7.Text = "Phone A Friend";
             button8.Text = "Change Question";
             textBox1.Text = "$1,000,000 \r\n$500,000 \r\n$250,000 \r\n$125,000 \r\n$64,000 \r\n$32,000 – Bank level \r\n$16,000 \r\n$8,000 \r\n$4,000 \r\n$2,000 \r\n$1,000 – Bank level \r\n$500 \r\n$300 \r\n$200 \r\n$100 ";
+            button9.Text = "Continue";
+            button10.Text = "Walk Away";
+            label3.Text = ($"Difficulty:  {difficultySet}");
+            label3.Font = new Font("Arial", 8, FontStyle.Bold);
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
 
         }
     }
 
-        
-    }
+
+}
 
