@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project2\\project2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|solutionrelative:project2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project2\\project2\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|solutionrelative:project2\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project2\\project2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|solutionrelative:project2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\project2\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|solutionrelative:project2\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project2\\project2\\saveddata\\all-questions.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|solutionrelative:project2\\saveddata\\all-questions.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\project2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -29,6 +13,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project2\\project2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|solutionrelative:project2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project2\\project2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|solutionrelative:project2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project2\\project2\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|solutionrelative:project2\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\project2\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|solutionrelative:project2\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project2\\project2\\saveddata\\all-questions.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|solutionrelative:project2\\saveddata\\all-questions.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A01A4835-39A7-4099-933C-FEB893A76BD4}|Project2\\Project2.csproj|c:\\users\\dawslj1\\desktop\\programming_2_project_1_luke_dawson\\project2\\project2\\questionbank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,11 +65,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Program.cs",
               "RelativeDocumentMoniker": "Project2\\Program.cs",
@@ -82,18 +82,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Category.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Category.cs",
-              "RelativeDocumentMoniker": "Project2\\Category.cs",
-              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Category.cs [Design]",
-              "RelativeToolTip": "Project2\\Category.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-28T00:42:21.843Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Question.cs",
@@ -102,12 +90,11 @@
               "RelativeToolTip": "Project2\\Question.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAiwB0AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T00:19:16.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T00:19:16.533Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Category.cs",
               "RelativeDocumentMoniker": "Project2\\Category.cs",
@@ -115,18 +102,17 @@
               "RelativeToolTip": "Project2\\Category.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAmwB4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-28T00:44:09.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-28T00:44:09.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Project2\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Form1.Designer.cs",
               "RelativeToolTip": "Project2\\Form1.Designer.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAASwP4AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAOYAAAAAAAAAAAASwAcBAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-21T01:21:34.291Z",
               "EditorCaption": ""
@@ -141,8 +127,7 @@
               "RelativeToolTip": "Project2\\Category.Designer.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAASwHkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-28T00:44:22.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-28T00:44:22.545Z"
             },
             {
               "$type": "Document",
@@ -154,8 +139,7 @@
               "RelativeToolTip": "Project2\\QuestionBank.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T00:19:54.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T00:19:54.447Z"
             },
             {
               "$type": "Document",
@@ -167,8 +151,7 @@
               "RelativeToolTip": "Project2\\Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T00:19:29.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T00:19:29.848Z"
             },
             {
               "$type": "Document",
@@ -180,12 +163,11 @@
               "RelativeToolTip": "Project2\\Caller.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T00:19:39.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T00:19:39.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "all-questions.json",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\SavedData\\all-questions.json",
               "RelativeDocumentMoniker": "Project2\\SavedData\\all-questions.json",
@@ -193,25 +175,24 @@
               "RelativeToolTip": "Project2\\SavedData\\all-questions.json",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-28T00:33:44.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-28T00:33:44.336Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Form1.cs",
               "RelativeDocumentMoniker": "Project2\\Form1.cs",
               "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Form1.cs",
               "RelativeToolTip": "Project2\\Form1.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-28T01:39:50.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Form1.cs",
               "RelativeDocumentMoniker": "Project2\\Form1.cs",
@@ -223,6 +204,17 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Category.cs",
+              "RelativeDocumentMoniker": "Project2\\Category.cs",
+              "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\Category.cs [Design]",
+              "RelativeToolTip": "Project2\\Category.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T00:42:21.843Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\ClassDiagram1.cd",
@@ -230,8 +222,7 @@
               "ToolTip": "C:\\Users\\DAWSLJ1\\Desktop\\Programming_2_Project_1_Luke_Dawson\\Project2\\Project2\\ClassDiagram1.cd",
               "RelativeToolTip": "Project2\\ClassDiagram1.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2026-10-28T00:58:34.021Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-28T00:58:34.021Z"
             },
             {
               "$type": "Document",

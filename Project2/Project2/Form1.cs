@@ -36,6 +36,8 @@ namespace Project2
             textBox2.BackColor = Color.White;
             label8.Text = ($"Category: {selectedCategrory}");
             label8.Font = new Font("Arial", 8, FontStyle.Bold);
+
+
         }
 
         public Form1(string category) : this()
@@ -52,6 +54,50 @@ namespace Project2
             label7.Text = ($"Correct! Winnings: $");
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
