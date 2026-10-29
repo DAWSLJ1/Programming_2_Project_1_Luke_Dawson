@@ -267,6 +267,7 @@
             Controls.Add(button1);
             Name = "Form1";
             Text = "Who Want's To Be A Millionaire";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace Project2
 {
-    internal class QuestionBank
+    public static class QuestionBank
     {
-        private List<Question> AllQuestions;
+        public static List<Question> AllQuestions = new List<Question>();
 
-        public QuestionBank(List<Question> allQuestions)
-        {
-            this.AllQuestions = allQuestions;
-        }
 
-        internal List<Question> AllQuestions1 { get => AllQuestions; set => AllQuestions = value; }
 
-        public List<Question> GetCategory(string category, string difficulty)
+        public static List<Question> AllQuestions1 { get => AllQuestions; set => AllQuestions = value; }
+
+        public static List<Question> GetCategory(string category, string difficulty)
         {
             return AllQuestions.Where(n => n.Category == category && n.Difficulty == difficulty).ToList();
         }

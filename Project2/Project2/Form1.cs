@@ -39,6 +39,12 @@ namespace Project2
 
 
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            QuestionBank.AllQuestions = DataHandler.ReadFromQuestionFile("all-questions.json");
+            textBox2.Text = QuestionBank.AllQuestions.Select(n => n.Question1).FirstOrDefault(); ;
+        }
 
         public Form1(string category) : this()
         {
@@ -98,6 +104,7 @@ namespace Project2
         {
 
         }
+
     }
 
 
